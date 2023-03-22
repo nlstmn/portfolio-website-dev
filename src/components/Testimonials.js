@@ -138,7 +138,7 @@ const Testimonials = () => {
                     <span className="big">
                       Отзывы
                       <span className="small">
-                      Отзывы
+                        Отзывы
                         <img className="svg" src="img/svg/quote.svg" alt="" />
                       </span>
                     </span>
@@ -153,7 +153,7 @@ const Testimonials = () => {
                       )}
                       data-index={1}
                     >
-                      <p>
+                      <p style={{ backgroundColor: "#D9D2CC" }}>
                         Super easy to update in a code editor. All the code is
                         labeled with comments and laid out nicely. The
                         documentation is great and the support via live chat was
@@ -168,7 +168,7 @@ const Testimonials = () => {
                       )}
                       data-index={2}
                     >
-                      <p>
+                      <p style={{ backgroundColor: "#D9D2CC" }}>
                         Wonderful support. Immediate response and they return
                         with an easy fix and clear information. Applied the fix
                         and it worked like a charm. You can definately trust
@@ -183,7 +183,7 @@ const Testimonials = () => {
                       )}
                       data-index={3}
                     >
-                      <p>
+                      <p style={{ backgroundColor: "#D9D2CC" }}>
                         {`Minimal design, incredibly well documented, and an
                         absolute pleasure to use! The customer support is one of
                         the absolute best I've ever had the pleasure of
@@ -198,7 +198,7 @@ const Testimonials = () => {
                       )}
                       data-index={4}
                     >
-                      <p>
+                      <p style={{ backgroundColor: "#D9D2CC" }}>
                         Loved the template design and customer support from
                         Marketify team! I am a noob in programming with very
                         little knowledge about coding but the Marketify team
@@ -218,9 +218,8 @@ const Testimonials = () => {
                               <div
                                 data-img-url={review && review.img}
                                 style={{
-                                  backgroundImage: `url(${
-                                    review && review.img
-                                  })`,
+                                  backgroundImage: `url(${review && review.img
+                                    })`,
                                 }}
                               />
                             </span>

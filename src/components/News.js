@@ -79,7 +79,7 @@ const News = () => {
         show={activeBlog}
         blogData={activeBlogData}
       />
-      <div className="tonni_tm_section" id="news">
+      <div className="tonni_tm_section" id="clients">
         <div className="tonni_tm_news">
           <div className="container bigger">
             <div className="news_inner">
@@ -159,7 +159,7 @@ const News = () => {
                 >
                   <div className="tonni_tm_main_title" data-type="centered">
                     <div className="title">
-                      <h3>Trusted Partners</h3>
+                      <h3>Мои партнёры</h3>
                     </div>
                     <div className="subtitle">
                       <p>

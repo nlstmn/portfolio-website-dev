@@ -27,7 +27,7 @@ const About = () => {
             <div className="right">
               <div className="title">
                 <span>Have A Nice Day!</span>
-                <h3>{`I'm`} Looking For UX/UI Designer.</h3>
+                <h3>Эксперт в ритэйле — 13 лет</h3>
               </div>
               <div className="text">
                 <p>

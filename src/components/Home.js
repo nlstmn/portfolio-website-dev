@@ -17,7 +17,7 @@ const Home = () => {
               <span className="welcome">Стилист • Агент по производству • Байер</span>
               <div className="tonni_tm_button">
                 <a className="anchor" href="#portfolio">
-                  See All Projects{" "}
+                  Просмотреть портфолио{" "}
                   <img className="svg" src="img/svg/arrow-right.svg" alt="" />
                 </a>
               </div>

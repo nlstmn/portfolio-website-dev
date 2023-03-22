@@ -36,7 +36,7 @@ const Contact = () => {
                 <li>
                   <div className="list_inner">
                     <span className="title">
-                      Product Sale Per Day Using Out Tools
+                      Закупаемый товар на единицу
                     </span>
                     <h3>
                       <Counter end={900} />+
@@ -46,7 +46,7 @@ const Contact = () => {
                 <li>
                   <div className="list_inner">
                     <span className="title">
-                      Quality and Satisfaction Guarantee
+                      Гарантия качественной работы
                     </span>
                     <h3>
                       <Counter end={100} />%
@@ -73,8 +73,8 @@ const Contact = () => {
             <div className="short wow fadeInUp" data-wow-duration="1s">
               <div className="left">
                 <span>
-                  <a href="mailto:infomaya.tonni@gmail.com">
-                    infomaya.tonni@gmail.com
+                  <a href="mailto:kristinvenichenko@gmail.com">
+                    kristinvenichenko@gmail.com
                   </a>
                   <img className="svg" src="img/svg/vector3.svg" alt="" />
                 </span>

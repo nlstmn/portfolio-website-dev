@@ -39,7 +39,7 @@ const Header = () => {
             <span className="ccc" />
           </div>
           <div className="follow">
-            <span>Follow Us:</span>
+            <span>Мои соцсети:</span>
             <ul>
               <li>
                 <a href="#">
@@ -57,11 +57,6 @@ const Header = () => {
                     src="img/svg/social/twitter.svg"
                     alt=""
                   />
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <img className="svg" src="img/svg/social/vimeo.svg" alt="" />
                 </a>
               </li>
               <li>

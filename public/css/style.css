@@ -589,7 +589,7 @@ h6 {
 }
 .tonni_tm_button .svg {
   position: relative;
-  margin-left: 6px;
+  margin: 0 0 6px 6px;
   top: 3px;
   color: var(--extra-color);
 }
