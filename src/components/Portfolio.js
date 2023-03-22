@@ -24,7 +24,7 @@ const Portfolio = () => {
           <div className="container">
             <div className="tonni_tm_main_title" data-type="centered">
               <div className="title">
-                <h3>Latest Projects</h3>
+                <h3>Порфтолио & Кейсы</h3>
               </div>
               <div className="subtitle">
                 <p>

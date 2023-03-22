@@ -14,7 +14,7 @@ const Home = () => {
                 <br />
                 Кристина<br />Вениченко.
               </h3>
-              <span className="welcome">Welcome to my Agency</span>
+              <span className="welcome">Стилист • Агент по производству • Байер</span>
               <div className="tonni_tm_button">
                 <a className="anchor" href="#portfolio">
                   See All Projects{" "}

@@ -7,8 +7,8 @@ const Service = () => {
             <div className="container">
               <div className="tonni_tm_main_title" data-type="flex">
                 <div className="title">
-                  <span>Our Services</span>
-                  <h3>What Can I Do</h3>
+                  <span>Мои услуги</span>
+                  <h3>Что я могу предложить?</h3>
                 </div>
                 <div className="subtitle">
                   <p>

@@ -28,30 +28,13 @@ const Index = () => {
       <MobileMenu />
       <Header />
       <Home />
-      {/* /HERO */}
-      {/* ABOUT */}
       <About />
-      {/* /ABOUT */}
-      {/* SERVICE */}
       <Service />
-      {/* /SERVICE */}
-      {/* PORTFOLIO */}
       <Portfolio />
-      {/* /PORTFOLIO */}
-      {/* TIMELINE */}
       <TimeLine />
-      {/* /TIMELINE */}
-      {/* PRICING */}
-      <Priceing />
-      {/* /PRICING */}
-      {/* TESTIMONIALS */}
+      {/*<Priceing />*/}
       <Testimonials />
-
-      {/* /TESTIMONIALS */}
-      {/* NEWS */}
       <News />
-      {/* /NEWS */}
-      {/* CONTACT */}
       <Contact />
       <Mouse />
       <PogressBar />

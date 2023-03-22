@@ -136,9 +136,9 @@ const Testimonials = () => {
                 <div className="main_title">
                   <h3>
                     <span className="big">
-                      Testimonials
+                      Отзывы
                       <span className="small">
-                        Testimonials
+                      Отзывы
                         <img className="svg" src="img/svg/quote.svg" alt="" />
                       </span>
                     </span>

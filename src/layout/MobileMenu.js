@@ -24,22 +24,22 @@ const MobileMenu = () => {
         <div className="dropdown_inner">
           <ul className="anchor_nav">
             <li className="current">
-              <a href="#home">Home</a>
+              <a href="#home">Кратко</a>
             </li>
             <li>
-              <a href="#about">About</a>
+              <a href="#about">Обо мне</a>
             </li>
             <li>
-              <a href="#service">Service</a>
+              <a href="#service">Услуги</a>
             </li>
             <li>
-              <a href="#portfolio">Portfolio</a>
+              <a href="#portfolio">Портфолио</a>
             </li>
             <li>
-              <a href="#news">News</a>
+              <a href="#clients">Клиенты</a>
             </li>
             <li>
-              <a href="#contact">Contact</a>
+              <a href="#contact">Связаться</a>
             </li>
           </ul>
         </div>

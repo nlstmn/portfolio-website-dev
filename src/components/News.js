@@ -84,7 +84,7 @@ const News = () => {
           <div className="container bigger">
             <div className="news_inner">
               <div className="container">
-                <div className="tonni_tm_main_title" data-type="flex">
+                {/*<div className="tonni_tm_main_title" data-type="flex">
                   <div className="title">
                     <span>Our Blog</span>
                     <h3>Latest News &amp; Articles</h3>
@@ -152,7 +152,7 @@ const News = () => {
                   <span className="shape3">
                     <img className="svg" src="img/svg/icon10.svg" alt="" />
                   </span>
-                </div>
+                </div>*/}
                 <div
                   className="tonni_tm_partners wow fadeInUp"
                   data-wow-duration="1s"
