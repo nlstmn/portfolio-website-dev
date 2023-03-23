@@ -30,9 +30,11 @@ export const customCursor = () => {
     t = document.querySelector(".cursor-outer");
 
   function mouseEvent(element) {
+    // eslint-disable-next-line react/no-find-dom-node
     ReactDOM.findDOMNode(element).addEventListener("mouseenter", function () {
       e.classList.add("cursor-hover"), t.classList.add("cursor-hover");
     });
+    // eslint-disable-next-line react/no-find-dom-node
     ReactDOM.findDOMNode(element).addEventListener("mouseleave", function () {
       e.classList.remove("cursor-hover"), t.classList.remove("cursor-hover");
     });
@@ -86,6 +88,7 @@ export const aTagClick = () => {
   const aTag = document.querySelectorAll("[href='#']");
   for (let i = 0; i < aTag.length; i++) {
     const a = aTag[i];
+    // eslint-disable-next-line react/no-find-dom-node
     ReactDOM.findDOMNode(a).addEventListener("click", (e) => {
       e.preventDefault();
     });
@@ -112,7 +115,7 @@ export const activeSkillProgress = () => {
 };
 // Data image
 export const dataImage = () => {
-  let d = document.querySelectorAll("[data-img-url");
+  let d = document.querySelectorAll("[data-img-url]");
   for (let i = 0; i < d.length; i++) {
     const element = d[i];
     element.style.backgroundImage = `url(${element.getAttribute(
