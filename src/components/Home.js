@@ -1,18 +1,21 @@
 import axios from 'axios';
+import {useEffect} from "react";
 
 const Home = () => {
 
-  axios.get('http://localhost:1337/api/home', {
+  useEffect(()=>{
+    axios.get('http://localhost:1337/api/home', {
       headers:{
         Authorization: `Bearer ${process.env.NEXT_PUBLIC_API_TOKEN}`
       }
-      })
-      .then(response => {
-        console.log(response.data);
-      })
-      .catch(error => {
-        console.error(error);
-      });
+    })
+        .then(response => {
+          console.log(response.data);
+        })
+        .catch(error => {
+          console.error(error);
+        });
+  },[]);
 
   return (
     <div className="tonni_tm_section" id="home">
