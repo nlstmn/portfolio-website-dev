@@ -1,20 +1,23 @@
 import axios from 'axios';
-import {useEffect} from "react";
+import {useEffect, useState} from "react";
 
 const Home = () => {
 
+  const [apiResponse, setApiResponse] = useState({});
+
   useEffect(()=>{
-    axios.get('http://localhost:1337/api/home', {
-      headers:{
-        Authorization: `Bearer ${process.env.NEXT_PUBLIC_API_TOKEN}`
-      }
-    })
-        .then(response => {
-          console.log(response.data);
-        })
-        .catch(error => {
-          console.error(error);
-        });
+      axios.get('http://localhost:1337/api/home', {
+        headers:{
+          Authorization: `Bearer ${process.env.NEXT_PUBLIC_API_TOKEN}`
+        }
+      })
+      .then(response => {
+        console.log(response.data.data[0].attributes);
+        setApiResponse(response.data.data[0].attributes);
+      })
+      .catch(error => {
+        console.error(error);
+      });
   },[]);
 
   return (
@@ -28,14 +31,14 @@ const Home = () => {
           <div className="content">
             <div className="content_in">
               <h3 className="name">
-                <span>Привет,</span> я —
+                <span>{apiResponse.intro}</span> я —
                 <br />
-                Кристина<br />Вениченко.
+                {apiResponse.firstName}<br />{apiResponse.lastName}
               </h3>
-              <span className="welcome">Стилист • Агент по производству • Байер</span>
+              <span className="welcome">{apiResponse.skill}</span>
               <div className="tonni_tm_button">
                 <a className="anchor" href="#portfolio">
-                  Просмотреть портфолио{" "}
+                  {apiResponse.link}{" "}
                   <img className="svg" src="img/svg/arrow-right.svg" alt="" />
                 </a>
               </div>

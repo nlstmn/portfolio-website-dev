@@ -1,4 +1,26 @@
+import axios from 'axios';
+import {useEffect, useState} from "react";
+
 const Service = () => {
+
+  const [apiResponse, setApiResponse] = useState({});
+
+  useEffect(()=>{
+    axios.get('http://localhost:1337/api/services', {
+      headers:{
+        Authorization: `Bearer ${process.env.NEXT_PUBLIC_API_TOKEN}`
+      }
+    })
+        .then(response => {
+          console.log(response.data.data[0].attributes);
+          setApiResponse(response.data.data[0].attributes);
+          console.log(response.data.data[0].attributes.experienceSkillPercentage1)
+        })
+        .catch(error => {
+          console.error(error);
+        });
+  },[]);
+
   return (
     <div className="tonni_tm_section" id="service">
       <div className="tonni_tm_service">
@@ -7,13 +29,12 @@ const Service = () => {
             <div className="container">
               <div className="tonni_tm_main_title" data-type="flex">
                 <div className="title">
-                  <span>Мои услуги</span>
-                  <h3>Что я могу предложить?</h3>
+                  <span>{apiResponse.servicesPlaceholder1}</span>
+                  <h3>{apiResponse.servicesPlaceholder2}</h3>
                 </div>
                 <div className="subtitle">
                   <p>
-                    Fusce sollicitudin eros id ex maximus gravida non vitae
-                    ante. Cras ac mi a dolor suscipit rutrum ut vitae mi.
+                    {apiResponse.servicesPlaceholder3}
                   </p>
                 </div>
               </div>
@@ -23,14 +44,12 @@ const Service = () => {
                     <div className="list_inner">
                       <img className="svg" src="img/svg/layer.svg" alt="" />
                       <div className="title">
-                        <h3>UI/UX Designer</h3>
-                        <span>Work At Envato</span>
+                        <h3>{apiResponse.servicesExperience1Title}</h3>
+                        <span>{apiResponse.servicesExperience1Place}</span>
                       </div>
                       <div className="text">
                         <p>
-                          Nunc hendrerit, justo vel ultricieselei fen pretium
-                          leo, ac finibus nulla eros consect viverra neque
-                          rutrum.
+                          {apiResponse.servicesExperience1Description}
                         </p>
                       </div>
                     </div>
@@ -43,14 +62,12 @@ const Service = () => {
                     <div className="list_inner">
                       <img className="svg" src="img/svg/design.svg" alt="" />
                       <div className="title">
-                        <h3>Graphic Design</h3>
-                        <span>Work At Freepic</span>
+                        <h3>{apiResponse.servicesExperience2Title}</h3>
+                        <span>{apiResponse.servicesExperience2Place}</span>
                       </div>
                       <div className="text">
                         <p>
-                          Nunc hendrerit, justo vel ultricieselei fen pretium
-                          leo, ac finibus nulla eros consect viverra neque
-                          rutrum.
+                          {apiResponse.servicesExperience2Description}
                         </p>
                       </div>
                     </div>
@@ -63,14 +80,12 @@ const Service = () => {
                     <div className="list_inner">
                       <img className="svg" src="img/svg/marketing.svg" alt="" />
                       <div className="title">
-                        <h3>Digital Marketing</h3>
-                        <span>Work At Fiverr</span>
+                        <h3>{apiResponse.servicesExperience3Title}</h3>
+                        <span>{apiResponse.servicesExperience3Place}</span>
                       </div>
                       <div className="text">
                         <p>
-                          Nunc hendrerit, justo vel ultricieselei fen pretium
-                          leo, ac finibus nulla eros consect viverra neque
-                          rutrum.
+                          {apiResponse.servicesExperience3Description}
                         </p>
                       </div>
                     </div>
@@ -83,14 +98,12 @@ const Service = () => {
                     <div className="list_inner">
                       <img className="svg" src="img/svg/apps.svg" alt="" />
                       <div className="title">
-                        <h3>Mobile Application</h3>
-                        <span>Work At Apple</span>
+                        <h3>{apiResponse.servicesExperience4Title}</h3>
+                        <span>{apiResponse.servicesExperience4Place}</span>
                       </div>
                       <div className="text">
                         <p>
-                          Nunc hendrerit, justo vel ultricieselei fen pretium
-                          leo, ac finibus nulla eros consect viverra neque
-                          rutrum.
+                          {apiResponse.servicesExperience4Description}
                         </p>
                       </div>
                     </div>
