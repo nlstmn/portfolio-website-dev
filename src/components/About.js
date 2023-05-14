@@ -6,15 +6,13 @@ const About = () => {
   const [apiResponse, setApiResponse] = useState({});
 
   useEffect(()=>{
-    axios.get('http://localhost:1337/api/about', {
+    axios.get('http://154.49.139.114:1337/api/about', {
       headers:{
         Authorization: `Bearer ${process.env.NEXT_PUBLIC_API_TOKEN}`
       }
     })
         .then(response => {
-          console.log(response.data.data[0].attributes);
           setApiResponse(response.data.data[0].attributes);
-          console.log(response.data.data[0].attributes.experienceSkillPercentage1)
         })
         .catch(error => {
           console.error(error);
