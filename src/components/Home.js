@@ -32,6 +32,7 @@ const Home = () => {
               <h3 className="name">
                 <span>{apiResponse.intro}</span> я —
                 <br />
+                {console.log('jhfbjfbdh ', apiResponse)}
                 {apiResponse.firstName}<br />{apiResponse.lastName}
               </h3>
               <span className="welcome">{apiResponse.skill}</span>
