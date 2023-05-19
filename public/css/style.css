@@ -557,16 +557,6 @@ h6 {
   position: relative;
   margin-bottom: 60px;
 }
-.tonni_tm_hero .welcome:before {
-  position: absolute;
-  content: "";
-  width: 70px;
-  height: 2px;
-  background-color: var(--extra-color);
-  left: 100%;
-  margin-left: 2px;
-  bottom: 9px;
-}
 .tonni_tm_button {
   width: 100%;
   height: auto;

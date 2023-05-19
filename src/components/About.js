@@ -29,7 +29,6 @@ const About = () => {
                 <div className="year">
                   <h3>{apiResponse.yearsOfExperienceNumber}</h3>
                   <span className="rounded">
-                    <img src="img/about/flower.png" alt="" />
                   </span>
                 </div>
                 <div className="experience">

@@ -39,29 +39,15 @@ const Header = () => {
             <span className="ccc" />
           </div>
           <div className="follow">
-            <span>Мои соцсети:</span>
+            <span>Связаться напрямую:</span>
             <ul>
               <li>
-                <a href="#">
+                <a href="https://t.me/kristina_venichenko">
                   <img
                     className="svg"
-                    src="img/svg/social/facebook.svg"
+                    src="img/svg/social/telegram.svg"
                     alt=""
                   />
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <img
-                    className="svg"
-                    src="img/svg/social/twitter.svg"
-                    alt=""
-                  />
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <img className="svg" src="img/svg/social/skype.svg" alt="" />
                 </a>
               </li>
             </ul>

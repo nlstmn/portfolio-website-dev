@@ -73,8 +73,8 @@ const Contact = () => {
             <div className="short wow fadeInUp" data-wow-duration="1s">
               <div className="left">
                 <span>
-                  <a href="mailto:kristinvenichenko@gmail.com">
-                    kristinvenichenko@gmail.com
+                  <a href="mailto:kristinaven.agency@gmail.com">
+                    kristinaven.agency@gmail.com
                   </a>
                   <img className="svg" src="img/svg/vector3.svg" alt="" />
                 </span>
