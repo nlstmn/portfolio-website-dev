@@ -6,7 +6,7 @@ const About = () => {
   const [apiResponse, setApiResponse] = useState({});
 
   useEffect(()=>{
-    axios.get('http://154.49.139.114:1337/api/about', {
+    axios.get('https://api.kristinaven.com/api/about', {
       headers:{
         Authorization: `Bearer ${process.env.NEXT_PUBLIC_API_TOKEN}`
       }
